@@ -3,7 +3,7 @@
     "version": "1.0.6",
     "title": "Factorio Qol Age: Resorted Items",
     "author": "Ingo-Igel",
-    "homepage": "https://mods.factorio.com/user/Ingo_Igel",
+    "homepage": "https://github.com/Ingo-Igel",
     "factorio_version": "2.0",
     "dependencies": ["base >= 2.0.28",
 	"? space-age >=2.0.28"
