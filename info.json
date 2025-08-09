@@ -11,7 +11,19 @@
 	"description": "This mod partially changes the order of items within the Logistics, Production, and Military groups.",
 	"package": {
 		"gallery": [
-			".gallery/thumbnail_huge.png"
+			".gallery/thumbnail_huge.png",
+			".gallery/Logistics Base Game.png",
+			".gallery/Logistics Base Game + Mod.png",
+			".gallery/Logistics Space Age.png",
+			".gallery/Logistics Space Age + Mod.png",
+			".gallery/Production Base Game.png",
+			".gallery/Production Base Game + Mod.png",
+			".gallery/Production Space Age.png",
+			".gallery/Production Space Age + Mod.png",
+			".gallery/Military Base Game.png",
+			".gallery/Military Base Game + Mod.png",
+			".gallery/Military Space Age.png",
+			".gallery/Military Space Age + Mod.png"
 		],
 		"prune_gallery": true,
 		"faq": "FAQ.md",
