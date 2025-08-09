@@ -10,7 +10,7 @@ This mod partially changes the order of items within the Logistics, Production, 
 * [Hot Pipes](https://mods.factorio.com/mod/HotPipes?from=search)
 * [K2 Steel Pipes](https://mods.factorio.com/mod/k2-steel-pipes?from=search)
 
-If you're missing a mod, check out the discussions to see if it's already been suggested. If not, feel free to suggest it in a new thread.
+You're missing a mod? Check out the discussions to see if it's already been suggested. If not, feel free to suggest it in a new thread.
 
 ***
 
