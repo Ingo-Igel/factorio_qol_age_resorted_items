@@ -3,6 +3,17 @@ Version: 1.0.6
 Date: ????
   Changes:
     - Added LICENCE file
+    - Added suport for "lane-splitters" (requested and Code provided by UltraJohn)
+    - Added suport for "lignumis" (requested and Code provided by UltraJohn)
+    - Added suport for "castra" (requested and Code provided by UltraJohn)
+    - Added suport for "planetaris-unbounded" (requested and Code provided by UltraJohn)
+    - Added suport for "snouz_better_substation" (requested and Code provided by UltraJohn)
+    - Added suport for "zithorian-extra-storage-tanks-port" (requested and Code provided by UltraJohn)
+    - Added suport for "est-tiny-storage-tank" (requested and Code provided by UltraJohn)
+    - Added suport for "est-steel-storage-tank" (requested and Code provided by UltraJohn)
+    - Added suport for "underground-storage-tank" (requested and Code provided by UltraJohn)
+    - Added suport for "corrundum" (requested and Code provided by UltraJohn)
+    - Added suport for "wide-steel-chests" (requested and Code provided by UltraJohn)
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 2025-06-09

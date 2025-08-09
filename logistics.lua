@@ -3,11 +3,30 @@ if mods["space-age"] then
 	space_age = true
 end
 
+local lignumis = false
+if mods["lignumis"] then
+	lignumis = true
+end
+
+local castra = false
+if mods["castra"] then
+	castra = true
+end
+
+local planetaris_unbounded = false
+if mods["planetaris-unbounded"] then
+	planetaris_unbounded = true
+end
+
 -- item-subgroup - storage
 data.raw["item-subgroup"]["storage"].order="a"
 
 -- item-subgroup - belt
 data.raw["item-subgroup"]["belt"].order="ba"
+
+if castra then
+	data.raw.item["military-transport-belt"].order = "a[transport-belt]-c[express-transport-belt]-a"
+end
 
 -- item-subgroup - underground-belt
 if space_age then
@@ -18,10 +37,23 @@ if space_age then
 		order = "bb"
 	}})
 
+	if lignumis then
+		data.raw.item["wood-underground-belt"].subgroup = "underground-belt"
+	end
+
 		data.raw.item["underground-belt"].subgroup = "underground-belt"
 		data.raw.item["fast-underground-belt"].subgroup = "underground-belt"
 		data.raw.item["express-underground-belt"].subgroup = "underground-belt"
 		data.raw.item["turbo-underground-belt"].subgroup = "underground-belt"
+
+	if castra then
+		data.raw.item["military-underground-belt"].subgroup = "underground-belt"
+		data.raw.item["military-underground-belt"].order = "b[underground-belt]-c[express-underground-belt]-a"
+	end
+
+	if planetaris_unbounded then
+		data.raw.item["planetaris-hyper-underground-belt"].subgroup = "underground-belt"
+	end
 end
 
 
@@ -34,10 +66,44 @@ if space_age then
 		order = "bc"
 	}})
 
+	if lignumis then
+		data.raw.item["wood-splitter"].subgroup = "splitter"
+	end
 		data.raw.item["splitter"].subgroup = "splitter"
 		data.raw.item["fast-splitter"].subgroup = "splitter"
 		data.raw.item["express-splitter"].subgroup = "splitter"
 		data.raw.item["turbo-splitter"].subgroup = "splitter"
+
+	if castra then
+		data.raw.item["military-splitter"].subgroup = "splitter"
+		data.raw.item["military-splitter"].order = "c[splitter]-c[express-splitter]-a"
+	end
+
+	if planetaris_unbounded then
+		data.raw.item["planetaris-hyper-splitter"].subgroup = "splitter"
+	end
+end
+
+-- item-subgroup - lane-splitters
+if mods["lane-splitters"] then
+	data:extend({{
+		type = "item-subgroup",
+		name = "lane-splitters",
+		group = "logistics",
+		order = "bd"
+	}})
+
+	if lignumis then
+		data.raw.item["wood-lane-splitter"].subgroup = "lane-splitters"
+	end
+
+		data.raw.item["lane-splitter"].subgroup = "lane-splitters"
+		data.raw.item["fast-lane-splitter"].subgroup = "lane-splitters"
+		data.raw.item["express-lane-splitter"].subgroup = "lane-splitters"
+
+	if mods["space-age"] then
+		data.raw.item["turbo-lane-splitter"].subgroup = "lane-splitters"
+	end
 end
 
 -- item-subgroup - inserter
@@ -77,6 +143,34 @@ end
 	data.raw.item["pump"].subgroup = "fluid-distribution"
 	data.raw.item["pump"].order = "da"
 
+if mods["zithorian-extra-storage-tanks-port"] then
+	data.raw.item["fluid-tank-1x1"].subgroup = "fluid-distribution"
+	data.raw.item["fluid-tank-1x1"].order = "db"
+	data.raw.item["fluid-tank-2x2"].subgroup = "fluid-distribution"
+	data.raw.item["fluid-tank-2x2"].order = "dc"
+	data.raw.item["fluid-tank-3x4"].subgroup = "fluid-distribution"
+	data.raw.item["fluid-tank-3x4"].order = "de"
+	data.raw.item["fluid-tank-5x5"].subgroup = "fluid-distribution"
+	data.raw.item["fluid-tank-5x5"].order = "df"
+end
+
+if mods["est-tiny-storage-tank"] then
+	data.raw.item["tiny-inline-storage-tank"].subgroup = "fluid-distribution"
+	data.raw.item["tiny-inline-storage-tank"].order = "dg"
+	data.raw.item["tiny-4way-storage-tank"].subgroup = "fluid-distribution"
+	data.raw.item["tiny-4way-storage-tank"].order = "dh"
+end
+
+if mods["est-steel-storage-tank"] then
+	data.raw.item["steel-storage-tank"].subgroup = "fluid-distribution"
+	data.raw.item["steel-storage-tank"].order = "di"
+end
+
+if mods["underground-storage-tank"] then
+	data.raw.item["underground-storage-tank"].subgroup = "fluid-distribution"
+	data.raw.item["underground-storage-tank"].order = "dj"
+end
+
 if space_age then
 	data.raw.recipe["casting-pipe"].subgroup = "fluid-distribution"
 	data.raw.recipe["casting-pipe"].order = "e"
@@ -84,8 +178,21 @@ if space_age then
 	data.raw.recipe["casting-pipe-to-ground"].order = "f"
 end
 
+if mods["lignumis"] then
+	data:extend({{
+		type = "item-subgroup",
+		name = "gold-fluid-distribution",
+		group = "logistics",
+		order = "eb"
+	}})
+
+	data.raw.item["gold-pipe"].subgroup = "gold-fluid-distribution"
+	data.raw.item["gold-pipe-to-ground"].subgroup = "gold-fluid-distribution"
+	data.raw.item["gold-storage-tank"].subgroup = "gold-fluid-distribution"
+end
+
 -- item-subgroup - energy-pipe-distribution
-data.raw["item-subgroup"]["energy-pipe-distribution"].order="eb"
+data.raw["item-subgroup"]["energy-pipe-distribution"].order="ec"
 
 if mods["k2-steel-pipes"] then
 	data.raw.item["kr-steel-pipe"].order = "a"
@@ -100,7 +207,7 @@ data:extend({{
 	type = "item-subgroup",
 	name = "energy-distribution",
 	group = "logistics",
-	order = "ec"
+	order = "ed"
 }})
 
 	data.raw.item["small-electric-pole"].subgroup = "energy-distribution"
@@ -111,6 +218,11 @@ data:extend({{
 	data.raw.item["big-electric-pole"].order = "c"
 	data.raw.item["substation"].subgroup = "energy-distribution"
 	data.raw.item["substation"].order = "d"
+
+if mods["snouz_better_substation"] then
+	data.raw.item["snouz_better_substation"].subgroup = "energy-distribution"
+	data.raw.item["snouz_better_substation"].order = "dd"
+end
 
 -- item-subgroup - circuit-network
 data.raw["item-subgroup"]["circuit-network"].order="f"
@@ -162,5 +274,17 @@ if space_age then
 	if mods["Explosive Excavation"]then
 		data.raw.item["blasting-charge"].subgroup = "terraforming"
 		data.raw.item["blasting-charge"].order = "b"
+	end
+end
+
+
+if mods["wide-steel-chests"] then
+	if mods["corrundum"] then
+		data.raw.item["ice-box"].subgroup = "wide-aai-wood-containers"
+		data.raw.item["ice-box"].order = "ae"
+	end
+	if planetaris_unbounded then
+		data.raw.item["planetaris-big-chest"].subgroup = "wide-aai-wood-containers"
+		data.raw.item["planetaris-big-chest"].order = "af"
 	end
 end

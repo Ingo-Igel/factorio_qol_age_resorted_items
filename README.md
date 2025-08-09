@@ -7,8 +7,19 @@ This mod partially changes the order of items within the Logistics, Production, 
 ### Supported Mods:
 
 * [Explosive Excavation](https://mods.factorio.com/mod/Explosive%20Excavation?from=search)
-* [Hot Pipes](https://mods.factorio.com/mod/HotPipes?from=search)
-* [K2 Steel Pipes](https://mods.factorio.com/mod/k2-steel-pipes?from=search)
+* [Hot Pipes](https://mods.factorio.com/mod/HotPipes)
+* [K2 Steel Pipes](https://mods.factorio.com/mod/k2-steel-pipes)
+* [Lane Splitters](https://mods.factorio.com/mod/lane-splitters)
+* [Lignumis](https://mods.factorio.com/mod/lignumis)
+* [Planet Castra](https://mods.factorio.com/mod/castra)
+* [Planetaris Unbounded: Arig](https://mods.factorio.com/mod/planetaris-unbounded)
+* [Hypercell substation](https://mods.factorio.com/mod/snouz_better_substation)
+* [Zithorian's Extra Storage Tanks for 2.0](https://mods.factorio.com/mod/zithorian-extra-storage-tanks-port)
+* [Extra Storage Tanks: Tiny Storage Tanks](https://mods.factorio.com/mod/est-tiny-storage-tank)
+* [Extra Storage Tanks: Steel Storage Tank](https://mods.factorio.com/mod/est-steel-storage-tank)
+* [Underground Storage Tank](https://mods.factorio.com/mod/underground-storage-tank)
+* [Corrundum](https://mods.factorio.com/mod/corrundum)
+* [Wide Containers](https://mods.factorio.com/mod/wide-steel-chests)
 
 You're missing a mod? Check out the discussions to see if it's already been suggested. If not, feel free to suggest it in a new thread.
 
