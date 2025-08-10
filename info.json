@@ -20,10 +20,10 @@
 			".gallery/Production Base Game + RI.png",
 			".gallery/Production Space Age.png",
 			".gallery/Production Space Age + RI.png",
-			".gallery/Military Base Game.png",
-			".gallery/Military Base Game + RI.png",
-			".gallery/Military Space Age.png",
-			".gallery/Military Space Age + RI.png"
+			".gallery/Combat Base Game.png",
+			".gallery/Combat Base Game + RI.png",
+			".gallery/Combat Space Age.png",
+			".gallery/Combat Space Age + RI.png"
 		],
 		"prune_gallery": true,
 		"faq": "FAQ.md",
