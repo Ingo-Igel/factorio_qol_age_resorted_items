@@ -2,7 +2,7 @@
 
 [![Github Source Code](https://img.shields.io/badge/GitHub-Source%20Code-blue)](https://github.com/Ingo-Igel/factorio_qol_age_resorted_items) [![Downloads](https://img.shields.io/badge/dynamic/json?color=orange&label=Factorio%20Mod%20Portal&query=downloads_count&suffix=%20downloads&url=https%3A%2F%2Fmods.factorio.com%2Fapi%2Fmods%2Ffactorio_qol_age_resorted_items)](https://mods.factorio.com/mod/factorio_qol_age_resorted_items)
 
-This mod partially changes the order of items within the Logistics, Production, and Military groups.
+This mod partially changes the order of items within the Logistics, Production, and Combat groups.
 
 ### Supported Mods:
 

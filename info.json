@@ -8,7 +8,7 @@
 	"dependencies": ["base >= 2.0.28",
 	"? space-age >=2.0.28"
 	],
-	"description": "This mod partially changes the order of items within the Logistics, Production, and Military groups.",
+	"description": "This mod partially changes the order of items within the Logistics, Production, and Combat groups.",
 	"package": {
 		"gallery": [
 			".gallery/thumbnail_huge.png",
