@@ -3,6 +3,8 @@ Version: 1.0.6
 Date: ????
   Changes:
     - Added LICENCE file
+    - Reorderd combat items
+    - Updated example images
     - Added suport for "lane-splitters" (requested and Code provided by UltraJohn)
     - Added suport for "lignumis" (requested and Code provided by UltraJohn)
     - Added suport for "castra" (requested and Code provided by UltraJohn)
