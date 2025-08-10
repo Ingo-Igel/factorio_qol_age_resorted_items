@@ -13,17 +13,17 @@
 		"gallery": [
 			".gallery/thumbnail_huge.png",
 			".gallery/Logistics Base Game.png",
-			".gallery/Logistics Base Game + Mod.png",
+			".gallery/Logistics Base Game + RI.png",
 			".gallery/Logistics Space Age.png",
-			".gallery/Logistics Space Age + Mod.png",
+			".gallery/Logistics Space Age + RI.png",
 			".gallery/Production Base Game.png",
-			".gallery/Production Base Game + Mod.png",
+			".gallery/Production Base Game + RI.png",
 			".gallery/Production Space Age.png",
-			".gallery/Production Space Age + Mod.png",
+			".gallery/Production Space Age + RI.png",
 			".gallery/Military Base Game.png",
-			".gallery/Military Base Game + Mod.png",
+			".gallery/Military Base Game + RI.png",
 			".gallery/Military Space Age.png",
-			".gallery/Military Space Age + Mod.png"
+			".gallery/Military Space Age + RI.png"
 		],
 		"prune_gallery": true,
 		"faq": "FAQ.md",
